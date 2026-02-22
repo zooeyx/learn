@@ -7,6 +7,7 @@ Structured learning repository. Code locally in Zed, syncs to homelab server via
 ## Structure
 
 - `programming/c/` — C programming, chapters 01-11
+- `programming/python/` — Python programming, chapters 01-13
 - `ai-ml/` — AI/ML learning (placeholder)
 
 ## C Build System
@@ -28,8 +29,30 @@ make clean              # clean all chapters
 Compiler: Apple clang, C17, `-Wall -Wextra -Wpedantic -g`.
 Binaries go into `build/` subdirectory (gitignored).
 
+## Python Build System
+
+Each chapter has a 1-line Makefile that includes `../common/common.mk`.
+
+```bash
+# Run and test in any chapter
+make                    # run all .py files
+make test               # run pytest on tests/
+make lint               # py_compile syntax check
+make clean              # remove __pycache__
+
+# From programming/python/ root
+make                    # run all chapters
+make test               # test all chapters
+make clean              # clean all chapters
+```
+
+Python 3, no external dependencies (except ch13 projects).
+
 ## Conventions
 
 - One concept per `.c` file with a `main()` — each file is self-contained
 - Use `debug.h` macros for assertions and debug printing
+- One concept per `.py` file with `if __name__ == "__main__": main()`
+- Use `common/helpers.py` for assertions and debug printing
+- Completed examples to study (`[x]`) and TODO exercises to implement (`[ ]`)
 - Chapter READMEs have exercise checklists
