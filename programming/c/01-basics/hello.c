@@ -8,11 +8,9 @@
 // Exercise 3: Use \t (tab) and \n (newline) in your output
 
 int main(void) {
-    // TODO: print "Hello, world!"
-
-    // TODO: print "My name is <your name>"
-
-    // TODO: print something using \t and \n escape sequences
-
+    printf("Hello World!\t\n");
+    printf("Hello World!\n");
+    printf("My name is Andy\n");
+    printf("Name:\tAndy\nAge:\t39\n");
     return 0;
 }
