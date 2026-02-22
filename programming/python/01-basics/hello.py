@@ -6,19 +6,21 @@ def main():
 
     name = "Zed"
     language = "Python"
-    print(f"Name:\t{name}")
+    print(f"Name:\t\t{name}")
     print(f"Learning:\t{language}")
 
     # Escape characters
     print("Line 1\nLine 2")
     print("Tab\there")
-    print("Quote: \"hello\"")
+    print('Quote: "hello"')
 
     # Multi-line string
-    print("""
+    print(
+        """
     This is a
     multi-line string
-    """.strip())
+    """.strip()
+    )
 
     # String repetition and concatenation
     print("-" * 30)

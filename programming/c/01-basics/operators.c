@@ -1,31 +1,29 @@
 #include <stdio.h>
 
+// BGC Chapter 3: Variables and Statements — Boolean & Comparisons
+// Reference: http://lab.local:8888/split/variables-and-statements.html
+//
+// Exercise 1: Use comparison operators (==, !=, <, >, <=, >=)
+// Exercise 2: Use logical operators (&&, ||, !)
+// Exercise 3: Use pre/post increment (++i vs i++)
+
 int main(void) {
-    // Arithmetic
-    int a = 17, b = 5;
-    printf("Arithmetic: %d + %d = %d\n", a, b, a + b);
-    printf("Arithmetic: %d %% %d = %d (modulo)\n", a, b, a % b);
+    int a = 10, b = 20;
 
-    // Comparison
-    printf("\nComparison: %d > %d = %d\n", a, b, a > b);
-    printf("Comparison: %d == %d = %d\n", a, b, a == b);
+    // TODO: print whether a is less than b (use %d for the result)
+    // example: printf("a < b = %d\n", a < b);
 
-    // Logical
-    int x = 1, y = 0;
-    printf("\nLogical: %d && %d = %d\n", x, y, x && y);
-    printf("Logical: %d || %d = %d\n", x, y, x || y);
-    printf("Logical: !%d = %d\n", x, !x);
+    // TODO: print whether a equals 10 AND b equals 20
 
-    // Bitwise
-    unsigned int m = 0xF0, n = 0x0F;
-    printf("\nBitwise: 0x%X & 0x%X = 0x%X\n", m, n, m & n);
-    printf("Bitwise: 0x%X | 0x%X = 0x%X\n", m, n, m | n);
-    printf("Bitwise: 0x%X ^ 0x%X = 0x%X\n", m, n, m ^ n);
-    printf("Bitwise: 0x%X << 4 = 0x%X\n", n, n << 4);
+    // TODO: print whether a equals 99 OR b equals 20
 
-    // Ternary
-    int max = (a > b) ? a : b;
-    printf("\nTernary: max(%d, %d) = %d\n", a, b, max);
+    // TODO: demonstrate the difference between ++i and i++
+    // int x = 5;
+    // printf("%d\n", x++);  // what prints? what is x now?
+    // printf("%d\n", ++x);  // what prints?
+
+    // TODO: use the ternary operator to find the max of a and b
+    // int max = (condition) ? value_if_true : value_if_false;
 
     return 0;
 }

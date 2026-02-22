@@ -10,23 +10,30 @@ Exercises:
 
 def main():
     # TODO: Create an integer variable 'age' and assign your age
-
+    age = 39
     # TODO: Create a float variable 'height' in meters
-
+    height = 1.90
     # TODO: Create a string variable 'name'
-
+    name = "Andy"
     # TODO: Create a boolean variable 'is_learning'
-
+    is_learning = True
     # TODO: Print all variables with labels using f-strings
+    print(
+        f"My name is {name}, I'm {height} meters tall and it is {is_learning} that I am learning."
+    )
     # Hint: print(f"Name: {name}")
 
     # TODO: Print the type of each variable
-    # Hint: print(f"type of age: {type(age).__name__}")
+    print(type(age))
+    print(f"Age type is: {type(age).__name__}")
+    print(type(name))
+    print(type(height))
+    print(type(is_learning))
 
     # TODO: Demonstrate type conversion
-    # Hint: str_num = "42"; num = int(str_num)
-
-    pass  # Remove when done
+    string_number = "542"
+    float_number = float(string_number)
+    print(f"The magic number is {float_number:.2f}")
 
 
 if __name__ == "__main__":

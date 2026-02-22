@@ -9,6 +9,16 @@ Exercises:
 
 
 def main():
+    name = input("Enter your name: ")
+    print(f"Hello {name}.")
+    x = int(input("Enter first number: "))
+    y = int(input("Enter second number: "))
+
+    sum = x + y
+
+    print(f"The sum of your numbers is {sum}")
+    ask_pi = float(input("Enter pi value: "))
+    print(f"Let's just leave it at {ask_pi:.2f}")
     # TODO: Read user's name with input() and print a greeting
     # Hint: name = input("Enter your name: ")
 

@@ -32,6 +32,6 @@ Python uses indentation (4 spaces) to define code blocks, not braces. This enfor
 
 - [x] `hello.py` — Study this: print, f-strings, escape characters
 - [x] `types.py` — Study this: Python's basic data types and type()
-- [ ] `variables.py` — Implement: variable declaration, types, assignment
+- [x] `variables.py` — Implement: variable declaration, types, assignment
 - [ ] `operators.py` — Implement: arithmetic, comparison, logical operators
 - [ ] `input_output.py` — Implement: input(), type conversion, formatted output
