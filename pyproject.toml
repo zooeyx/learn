@@ -1,0 +1,20 @@
+[project]
+name = "learn-langgraph"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "langgraph>=1.0",
+    "langchain-openai>=0.3",
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests", "lesson_10_capstone"]
+filterwarnings = [
+    # LangGraph checkpoint serialization: AIMessage.parsed field triggers
+    # Pydantic warnings when with_structured_output() is used. This is a
+    # known LangGraph/Pydantic compat issue — harmless, can't fix in user code.
+    "ignore:Pydantic serializer warnings:UserWarning",
+]
